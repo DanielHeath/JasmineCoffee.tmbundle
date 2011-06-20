@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>saveModifiedFiles</string>
+	<key>command</key>
+	<string># just to remind you of some useful environment variables
+# see Help / Environment Variables for the full list
+echo File: "$TM_FILEPATH"
+echo Word: "$TM_CURRENT_WORD"
+echo Selection: "$TM_SELECTED_TEXT"
+
+open http://atlas.local/spec/?spec_file=`echo $TM_FILEPATH | sed s/.*spec\\\/jasmine\\\///g | sed s/coffee/js/g`
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>@r</string>
+	<key>name</key>
+	<string>Run spec</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.coffee.jasmine</string>
+	<key>uuid</key>
+	<string>3A83E471-DD28-4D50-B4ED-1EE722E72C62</string>
+</dict>
+</plist>
