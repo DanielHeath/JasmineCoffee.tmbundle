@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>saveModifiedFiles</string>
+	<key>command</key>
+	<string>growlnotify `$TM_PROJECT_DIRECTORY/lib/tasks/phantom_runner.coffee $TM_FILEPATH`
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>@d</string>
+	<key>name</key>
+	<string>Run spec with phantom</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.coffee.jasmine</string>
+	<key>uuid</key>
+	<string>3D1E3062-1945-4F3A-A3EE-EDB9DEA0DFF8</string>
+</dict>
+</plist>
