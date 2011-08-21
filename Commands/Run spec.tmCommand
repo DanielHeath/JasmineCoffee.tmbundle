@@ -11,7 +11,7 @@ echo File: "$TM_FILEPATH"
 echo Word: "$TM_CURRENT_WORD"
 echo Selection: "$TM_SELECTED_TEXT"
 
-open http://atlas.local/spec/?spec_file=`echo $TM_FILEPATH | sed s/.*spec\\\/jasmine\\\///g | sed s/coffee/js/g`
+open http://change.this.to.your.spec.path/spec?spec_file=`echo $TM_FILEPATH | sed s/.*spec\\\/jasmine\\\///g | sed s/coffee/js/g`
 </string>
 	<key>input</key>
 	<string>none</string>
